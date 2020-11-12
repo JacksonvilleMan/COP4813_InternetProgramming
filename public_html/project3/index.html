@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Statistical Calculator</title>
+
+    <script src="script.js"></script>
+
+    <body>
+        <form name="statCalc" onsubmit="return performStatistics();" method="POST">
+            <div>
+                <input type="text" name="numInput" id="numInput">
+            </div>
+            <div>
+                <label for="sum">Sum</label>
+                <input type="text" name="sum" id="sum" readonly>
+            </div>
+            <div>
+                <label for="max">Max</label>
+                <input type="text" name="max" id="max" readonly>
+            </div>
+            <div>
+                <label for="min">Min</label>
+                <input type="text" name="min" id="min" readonly>
+            </div>
+            <div>
+                <label for="mean">Mean</label>
+                <input type="text" name="mean" id="mean" readonly>
+            </div>
+            <div>
+                <label for="median">Median</label>
+                <input type="text" name="median" id="median" readonly>
+            </div>
+            <div>
+                <label for="mode">Mode</label>
+                <input type="text" name="mode" id="mode" readonly>
+            </div>
+            <div>
+                <label for="vari">Variance</label>
+                <input type="text" name="vari" id="vari" readonly>
+            </div>
+            <div>
+                <label for="stdDev">Std Dev</label>
+                <input type="text" name="stdDev" id="stdDev" readonly>
+            </div>
+            <div>
+                <input type="reset">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <div>
+            <a href="../index.html">ePortfolio</a>
+        </div>
+    </body>
+</html>

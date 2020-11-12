@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Payment Processing Page</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="../css/mySite.css">
+
+    <body>
+        <h2 class="payment">Enter Payment Information</h2>
+
+        <div>
+            <img src="images/AmEx.png">
+            <img src="images/Discover.png">
+            <img src="images/MasterCard.png">
+            <img src="images/Visa.png">
+        </div>
+
+        <form name="paymentForm" onsubmit="return validateForm();" method="post">
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" required>
+            </div>
+            <div>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" required>
+            </div>
+            <div>
+                <label for="zip">Zip</label>
+                <input type="text" name="zip" id="zip" required>
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="nameOnCard">Name on Card</label>
+                <input type="text" name="nameOnCard" id="nameOnCard" required>
+            </div>
+            <div>
+                <label for="cardNumber">Card Number</label>
+                <input type="text" name="cardNumber" id="cardNumber" required>
+            </div>
+            <div>
+                <label for="cvv2/cvc"><a href="https://en.wikipedia.org/wiki/Card_security_code" target="_blank">CVV2/CVC</a></label>
+                <input type="text" name="cvv2/cvc" id="cvv2/cvc" required>
+            </div>
+            <div>
+                <label for="stateSelect">Choose a State</label>
+                <select name="stateSelect" id="stateSelect">
+                    <option value="default" selected>Select State</option>
+                    <option value="al">Alabama</option>
+                    <option value="ak">Alaska</option>
+                    <option value="az">Arizona</option>
+                    <option value="ar">Arkansas</option>
+                    <option value="ca">California</option>
+                    <option value="co">Colorado</option>
+                    <option value="ct">Connecticut</option>
+                    <option value="de">Delaware</option>
+                    <option value="fl">Florida</option>
+                    <option value="ga">Georgia</option>
+                    <option value="hi">Hawaii</option>
+                    <option value="id">Idaho</option>
+                    <option value="il">Illinois</option>
+                    <option value="in">Indiana</option>
+                    <option value="ia">Iowa</option>
+                    <option value="ks">Kansas</option>
+                    <option value="ky">Kentucky</option>
+                    <option value="la">Louisiana</option>
+                    <option value="me">Maine</option>
+                    <option value="md">Maryland</option>
+                    <option value="ma">Massachusetts</option>
+                    <option value="mi">Michigan</option>
+                    <option value="mn">Minnesota</option>
+                    <option value="ms">Mississippi</option>
+                    <option value="mo">Missouri</option>
+                    <option value="mt">Montana</option>
+                    <option value="ne">Nebraska</option>
+                    <option value="nv">Nevada</option>
+                    <option value="nh">New Hampshire</option>
+                    <option value="nj">New Jersey</option>
+                    <option value="nm">New Mexico</option>
+                    <option value="ny">New York</option>
+                    <option value="nc">North Carolina</option>
+                    <option value="nd">North Dakota</option>
+                    <option value="oh">Ohio</option>
+                    <option value="ok">Oklahoma</option>
+                    <option value="or">Oregon</option>
+                    <option value="pa">Pennsylvania</option>
+                    <option value="ri">Rhode Island</option>
+                    <option value="sc">South Carolina</option>
+                    <option value="sd">South Dakota</option>
+                    <option value="tn">Tennessee</option>
+                    <option value="tx">Texas</option>
+                    <option value="ut">Utah</option>
+                    <option value="vt">Vermont</option>
+                    <option value="va">Virginia</option>
+                    <option value="wa">Washington</option>
+                    <option value="wv">West Virginia</option>
+                    <option value="wi">Wisconsin</option>
+                    <option value="wy">Wyoming</option>
+                </select>
+            </div>
+            <div>
+                <label for="expirationDate">Expiration Date</label>
+                <input type="date" value="2020-04-01" min="2017-01-01" max="2025-12-31" name="expirationDate" id="expirationDate">
+            </div>
+            <div>
+                <input type="image" src="images/PayNow.png" alt="Submit">
+            </div>
+        </form>
+        <div>
+            <a href="../index.html">ePortfolio</a>
+        </div>
+    </body>
+</html>

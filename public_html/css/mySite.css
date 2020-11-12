@@ -1,0 +1,142 @@
+@import "default.css";
+/* DO NOT MODIFY THE @import STATEMENT ABOVE */
+
+/* You will use this CSS file for each of your projects. Simply add new CSS classes and elements to the end of the file. */
+
+/* Be careful to keep your selector names unique to avoid collisions, which can cause confusion. */
+
+/*Project 1 Start*/
+.aboutMe{
+    color: peru;
+}
+.hobbies{
+    color: purple;
+}
+.education{
+    color:pink;
+}
+.hsDiploma{
+    font-style: italic;
+}
+.collegeDegree{
+    font-weight: bold;
+}
+a.personal:hover{
+    font-size: 150%;
+}
+
+table{
+    text-align: center;
+}
+th{
+    color: red;
+}
+.stripe{
+    color: blue;
+}
+.secondaryLVL{
+    list-style-type: upper-alpha;
+}
+
+.containerRadio{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.containerRadio input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.radioNew{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: grey;
+    border-radius: 50%;
+}
+.containerRadio input:checked ~ .radioNew{
+    background-color: green;
+}
+.radioNew:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.containerRadio input:checked ~ .radioNew:after {
+    display: block;
+}
+.containerRadio .radioNew:after {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.containerBox{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.containerBox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.boxNew{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: grey;
+}
+.containerBox input:checked ~ .boxNew{
+    background-color: blue;
+}
+.boxNew:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.containerBox input:checked ~ .boxNew:after {
+    display: block;
+}
+.containerBox .boxNew:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*Project 1 End*/
+
+/*Project 2 Start*/
+.payment{
+    color: rgb(0, 150, 255);
+}
+/*Project 2 End*/
